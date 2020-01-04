@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: myapp-relicaset
-labels:
+  labels:
     app: myapp
     type: front-end
 spec:
@@ -10,8 +10,8 @@ spec:
     metadata:
       name: myapp-pod
       labels:
-        app: myapp
-        type: front-end
+         app: myapp
+         type: front-end
     spec:
       containers:
         - name: nginx-container
